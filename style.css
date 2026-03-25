@@ -4,5 +4,36 @@
 }
 
 body {
-  font-family: "Lastica", sans-serif;
+  /* font-family: "Lastica", sans-serif; */
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 33.33vw;
+  height: auto;
+  padding: 0px;
+}
+
+form {
+  /* display: flex; */
+}
+
+.textBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-left: 10%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+input {
+  max-width: fit-content;
 }
