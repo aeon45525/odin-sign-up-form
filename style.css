@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Lastica";
+  src: url("fonts/Lastica.otf") format("opentype");
+}
+
+body {
+  font-family: "Lastica", sans-serif;
+}
