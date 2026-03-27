@@ -4,17 +4,18 @@
 }
 
 body {
-  /* font-family: "Lastica", sans-serif; */
-
+  font-family: "Lastica", sans-serif;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
+/* LOGO */
 .imgContainer {
-  width: 60vw;
+  width: 33vw;
   height: 100vh;
   position: relative;
+  flex-shrink: 0;
 }
 
 .porscheBackground {
@@ -42,30 +43,96 @@ body {
   height: auto;
 }
 
-#PORSCHE {
+.porscheText {
   color: white;
-  font-family: "Lastica", sans-serif;
   margin: 5px 0;
-  /* font-weight: bold; /
 }
 
-form {
-  /* display: flex; */
+/* FORM */
+/* HERO */
+#inputPage {
+  padding: 5%;
 }
 
-.textBoxes {
+.hero {
+  margin-bottom: 5%;
+}
+
+.hero .text span {
+  display: block;
+}
+
+/* TEXTFIELDS */
+.textBoxesContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-  padding-left: 10%;
+  gap: 40px 120px;
+  margin-bottom: 5%;
 }
 
-.input {
+.inputContainer {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  width: 35%;
 }
 
 input {
-  max-width: fit-content;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* SUBMIT */
+.endForm {
+  margin-top: 2%;
+}
+
+button {
+  border: none;
+  font-family: "Lastica", sans-serif;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+p {
+  font-weight: bold;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* VALIDATION */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid black;
+}
+
+#first_name:invalid,
+#last_name:invalid,
+#email:invalid,
+#phone_number:invalid,
+#password:invalid,
+#confirm_password:invalid {
+  border-color: red;
+}
+
+#first_name:valid,
+#last_name:valid,
+#email:valid,
+#phone_number:valid,
+#password:valid,
+#confirm_password:valid {
+  border-color: green;
 }
